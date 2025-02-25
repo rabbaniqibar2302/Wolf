@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="antialiased">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wolf-Kinnect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./output.css">
 </head>
 <body>
    <div class="container mx-auto">
-    <div class="navbar bg-gradient-to-b from-TEAL_LIGHT_ACTIVE from-10% flex justify-between">
+    <div class="navbar rounded-b-lg bg-gradient-to-b from-TEAL_LIGHT_ACTIVE from-10% flex justify-between px-8">
         <div class="col">
             <div class="avatar">
                 <div class="w-14 rounded-full">
@@ -18,14 +22,30 @@
             <a href="#" class="btn btn-ghost text-xl text-TEAL_DARKER">Wolf-Kinnect</a>
             <div class="flex-none">
                 <ul class="menu menu-horizontal px-1">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Testimony</a></li>
-                    <li><a href="">Plan</a></li>
+                    <li><a href="" class="hover:bg-TEAL_LIGHT_ACTIVE hover:rounded-md hover:text-neutral-50">Home</a></li>
+                    <li><a href="" class="hover:bg-TEAL_LIGHT_ACTIVE hover:rounded-md hover:text-neutral-50">About Us</a></li>
+                    <li><a href="" class="hover:bg-TEAL_LIGHT_ACTIVE hover:rounded-md hover:text-neutral-50">Testimony</a></li>
+                    <li><a href="" class="hover:bg-TEAL_LIGHT_ACTIVE hover:rounded-md hover:text-neutral-50">Plan</a></li>
                 </ul>
             </div>
         </div>
-        <button class="btn rounded-md btn-sm bg-TEAL_NORMAL text-TEAL_LIGHT hover:bg-TEAL_NORMAL_HOVER hover:outline-2 hover:outline-offset-2 hover:border-TEAL_LIGHT_ACTIVE">Try it!</button>
+        <button class="btn rounded-md btn-sm bg-TEAL_NORMAL text-TEAL_LIGHT hover:bg-TEAL_NORMAL_HOVER hover:border-TEAL_LIGHT_ACTIVE hover:outline-4 hover:outline-offset-2">Try it!</button>
+    </div>
+    <div class="grid grid-flow-col grid-rows-3 gap-4 mx-auto w-fit">
+        <div class="row-span-3"><img class="h-full w-96 object-cover rounded-lg" src="assets/model_1.jpg"></div>
+        <div class="col-span-2 flex flex-col ">
+            <h1 class="font-light">Don't worry about your data because</h1>
+            <h1 class="text-5xl font-bold text-TEAL_DARKER">Wolf-Kinnect</h1>
+            <h1 class="font-light">will protect you!</h1>
+        </div>
+        <div class="col-span-2 row-span-2">
+            <h1>Dont leave us hanging! call us!</h1>
+            <button class="btn btn-sm bg-RED_LIGHT">
+                <h1>
+                    Make Appointment
+                </h1>
+            </button>
+        </div>
     </div>
    </div>
 </body>
