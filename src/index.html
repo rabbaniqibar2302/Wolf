@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="antialiased">
+<html lang="en" class="antialiased scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,8 @@
 
 <body class="bg-gradient-to-b from-TEAL_LIGHT_ACTIVE from-10% h-full antialiased">
     <div class="container mx-auto relative">
-        <div class="z-40 fixed top-0 right-0 left-0 navbar rounded-b-lg bg-TEAL_LIGHT_ACTIVE flex justify-between px-24 pt-5 pb-5">
+        <div
+            class="z-40 fixed top-0 right-0 left-0 navbar rounded-b-lg bg-TEAL_LIGHT_ACTIVE flex justify-between px-24 pt-5 pb-5">
             <div class="col">
                 <div class="avatar">
                     <div class="w-14">
@@ -31,10 +32,14 @@
                 <a href="#" class="btn btn-ghost text-xl text-TEAL_DARKER">Wolf-Kinnect</a>
                 <div class="flex-none">
                     <ul class="menu menu-horizontal px-1">
-                        <li><a href=""
+                        <li><a href="#rumah"
                                 class="hover:bg-TEAL_LIGHT_ACTIVE hover:rounded-md hover:text-neutral-50">Home</a></li>
-                        <li><a href="" class="hover:bg-TEAL_LIGHT_ACTIVE hover:rounded-md hover:text-neutral-50">About
+                        <li><a href="#tentang"
+                                class="hover:bg-TEAL_LIGHT_ACTIVE hover:rounded-md hover:text-neutral-50">About
                                 Us</a></li>
+                        <li><a href="#fitur"
+                                class="hover:bg-TEAL_LIGHT_ACTIVE hover:rounded-md hover:text-neutral-50">Features</a>
+                        </li>
                         <li><a href=""
                                 class="hover:bg-TEAL_LIGHT_ACTIVE hover:rounded-md hover:text-neutral-50">Testimony</a>
                         </li>
@@ -44,10 +49,10 @@
                 </div>
             </div>
             <button
-                class="btn rounded-md btn-sm bg-TEAL_NORMAL text-TEAL_LIGHT hover:bg-TEAL_NORMAL_HOVER hover:border-TEAL_LIGHT_ACTIVE hover:outline-4 hover:outline-offset-2">Try
+                class="btn rounded-md bg-TEAL_NORMAL text-TEAL_LIGHT hover:bg-TEAL_NORMAL_HOVER hover:border-TEAL_LIGHT_ACTIVE hover:outline-4 hover:outline-offset-2">Try
                 it!</button>
         </div>
-        <div class="flex w-full flex-row items-center gap-5 h-dvh">
+        <div id="rumah" class="flex w-full flex-row items-center gap-5 h-dvh">
             <div class="flex w-full flex-col items-end">
                 <div class="notes_gambar text-CREAM_LIGHT -mb-5 -mr-5 z-30 rotate-[-6.142rad]">
                     <h1 class="text-3xl">Slide Me</h1>
@@ -76,22 +81,25 @@
                 </div>
             </div>
         </div>
-        <div class="w-full h-dvh relative text-TEAL_LIGHT">
+        <div id="tentang" class="w-full h-dvh text-TEAL_LIGHT">
             <div class="hero h-2/3 bg-fixed bg-[url(assets/bg.png)] rounded-[2vw] ">
                 <div class="max-w-md">
                     <h1 class="mb-5 text-5xl font-bold">About Us</h1>
                     <p class="mb-5">
-                        Wolf-Kinnect is an innovative company founded by a dedicated team of data security experts committed to providing reliable, easy-to-use, and affordable data protection solutions, with a focus on maximum integrity and superior customer service to deliver peace of mind to all our users.
+                        Wolf-Kinnect is an innovative company founded by a dedicated team of data security experts
+                        committed to providing reliable, easy-to-use, and affordable data protection solutions, with a
+                        focus on maximum integrity and superior customer service to deliver peace of mind to all our
+                        users.
                     </p>
                 </div>
             </div>
         </div>
-        <div class="flex w-full flex-col items-center gap-10 h-dvh z-0">
+        <div id="fitur" class="flex w-full flex-col items-center gap-10 h-dvh z-0">
             <div class="col">
                 <h1 class="font-semibold text-7xl text-TEAL_DARK">Why choose us?</h1>
             </div>
             <div class="flex flex-row gap-10 mt-20">
-                <div class="card bg-base-100 w-96 shadow-md hover:shadow-2xl duration-700 hover:scale-105">
+                <div class="card bg-base-100 w-96  hover:shadow-2xl duration-700 hover:scale-105">
                     <figure>
                         <img src="assets/secure.jpg" class="object-cover h-64 w-full" />
                     </figure>
@@ -100,7 +108,7 @@
                         <p>Our systems use last blockchain technology and make comunication end-to-end encryptions</p>
                     </div>
                 </div>
-                <div class="card bg-base-100 w-96 shadow-md hover:shadow-2xl duration-700 hover:scale-105">
+                <div class="card bg-base-100 w-96  hover:shadow-2xl duration-700 hover:scale-105">
                     <figure>
                         <img src="assets/reliable.jpg" class="object-cover h-64 w-full" />
                     </figure>
@@ -110,7 +118,7 @@
                             you can count on every day.</p>
                     </div>
                 </div>
-                <div class="card bg-base-100 w-96 shadow-md hover:shadow-2xl duration-700 hover:scale-105">
+                <div class="card bg-base-100 w-96  hover:shadow-2xl duration-700 hover:scale-105">
                     <figure>
                         <img src="assets/easy.jpg" class="object-cover h-64 w-full" />
                     </figure>
@@ -122,7 +130,85 @@
                 </div>
             </div>
         </div>
-        <footer class="footer bg-neutral text-neutral-content pt-64">
+        <div id="testimoni" class="flex w-full flex-col items-start gap-10 h-dvh z-0">
+            <div class="title">
+                <h1 class="font-bold text-5xl text-TEAL_NORMAL">Over 100+ company trust us</h1>
+            </div>
+            <div class="carousel carousel-center bg-neutral rounded-box space-x-4 p-4 w-full gap-[10vw]">
+                <div class="carousel-item static w-64 text-TEAL_LIGHT group">
+                    <div class="relative">
+                        <img src="assets/testi_1.jpg" class="rounded-lg" alt="Satya Nadella">
+                        <div class="absolute bottom-10 left-10 right-10 flex flex-col gap-4 opacity-0 group-hover:opacity-100 transform scale-95 group-hover:scale-100transition duration-300 ease-in-out">
+                            <p class="font-light text-md">
+                                "Wolf-Kinnect provides reliable and user-friendly data security solutions."
+                            </p>
+                        </div>
+                        <div class="absolute bottom-10 left-10 right-10 flex flex-col gap-4 opacity-100 group-hover:opacity-0 transform scale-95 group-hover:scale-100transition duration-300 ease-in-out">
+                            <h1 class="font-bold text-3xl">Satya Nadella</h1>
+                            <h2 class="font-bold text-xl">CEO of Microsoft</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item static w-64 text-TEAL_LIGHT group">
+                    <div class="relative">
+                        <img src="assets/testi_2.jpg" class="rounded-lg" alt="Satya Nadella">
+                        <div class="absolute bottom-10 left-10 right-10 flex flex-col gap-4 opacity-0 group-hover:opacity-100 transform scale-95 group-hover:scale-100transition duration-300 ease-in-out">
+                            <p class="font-light text-md">
+                                "Wolf-Kinnect provides reliable and user-friendly data security solutions."
+                            </p>
+                        </div>
+                        <div class="absolute bottom-10 left-10 right-10 flex flex-col gap-4 opacity-100 group-hover:opacity-0 transform scale-95 group-hover:scale-100transition duration-300 ease-in-out">
+                            <h1 class="font-bold text-3xl">Satya Nadella</h1>
+                            <h2 class="font-bold text-xl">CEO of Microsoft</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item static w-64 text-TEAL_LIGHT group">
+                    <div class="relative">
+                        <img src="assets/testi_3.jpg" class="rounded-lg" alt="Satya Nadella">
+                        <div class="absolute bottom-10 left-10 right-10 flex flex-col gap-4 opacity-0 group-hover:opacity-100 transform scale-95 group-hover:scale-100transition duration-300 ease-in-out">
+                            <p class="font-light text-md">
+                                "Wolf-Kinnect provides reliable and user-friendly data security solutions."
+                            </p>
+                        </div>
+                        <div class="absolute bottom-10 left-10 right-10 flex flex-col gap-4 opacity-100 group-hover:opacity-0 transform scale-95 group-hover:scale-100transition duration-300 ease-in-out">
+                            <h1 class="font-bold text-3xl">Satya Nadella</h1>
+                            <h2 class="font-bold text-xl">CEO of Microsoft</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item static w-64 text-TEAL_LIGHT group">
+                    <div class="relative">
+                        <img src="assets/testi_4.jpg" class="rounded-lg" alt="Satya Nadella">
+                        <div class="absolute bottom-10 left-10 right-10 flex flex-col gap-4 opacity-0 group-hover:opacity-100 transform scale-95 group-hover:scale-100transition duration-300 ease-in-out">
+                            <p class="font-light text-md">
+                                "Wolf-Kinnect provides reliable and user-friendly data security solutions."
+                            </p>
+                        </div>
+                        <div class="absolute bottom-10 left-10 right-10 flex flex-col gap-4 opacity-100 group-hover:opacity-0 transform scale-95 group-hover:scale-100transition duration-300 ease-in-out">
+                            <h1 class="font-bold text-3xl">Satya Nadella</h1>
+                            <h2 class="font-bold text-xl">CEO of Microsoft</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item static w-64 text-TEAL_LIGHT group">
+                    <div class="relative">
+                        <img src="assets/testi_5.jpg" class="rounded-lg" alt="Satya Nadella">
+                        <div class="absolute bottom-10 left-10 right-10 flex flex-col gap-4 opacity-0 group-hover:opacity-100 transform scale-95 group-hover:scale-100transition duration-300 ease-in-out">
+                            <p class="font-light text-md">
+                                "Wolf-Kinnect provides reliable and user-friendly data security solutions."
+                            </p>
+                        </div>
+                        <div class="absolute bottom-10 left-10 right-10 flex flex-col gap-4 opacity-100 group-hover:opacity-0 transform scale-95 group-hover:scale-100transition duration-300 ease-in-out">
+                            <h1 class="font-bold text-3xl">Satya Nadella</h1>
+                            <h2 class="font-bold text-xl">CEO of Microsoft</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer class="footer bg-neutral text-neutral-content pt-64 pb-24">
             <aside>
                 <img src="assets/wm_dark.png" class="w-10 rounded-sm">
                 <p>
