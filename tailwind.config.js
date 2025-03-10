@@ -64,7 +64,8 @@ module.exports = {
         "YELLOW_DARK_ACTIVE": "#735703",
         "YELLOW_DARKER": "#594402"
     },
-    extend: {},
+    extend: {
+    },
   },
   plugins: [
     require('daisyui')
